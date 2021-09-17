@@ -3,54 +3,39 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Lupo</title>
+        <title>TP1</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="./index.css">
     </head>
     <body>
-        <div class="">
-            <div class="head-label">Connexion :</div>
-            <div class="connexion-arrow"></div>
+        <div class="container">
+            <form action="/" method="post">
+                <div class="field is-half">
+                    <label>Email</label>
+                    <p class="control has-icons-left has-icons-right">
+                        <input name="email" id="email" class="input is-large" type="email" placeholder="Email">
+                        <span class="icon is-small is-left">
+                            <i class="glyphicon glyphicon-envelope"></i>
+                        </span>
+                        <span class="icon is-small is-right">
+                            <i class="fas fa-check"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="field">
+                    <label>Password</label>
+                    <p class="control has-icons-left">
+                        <input  name="pass" id="password" class="input is-large" type="password" placeholder="Password">
+                        <span class="icon is-small is-left">
+                            <i class="glyphicon glyphicon-lock"></i>
+                        </span>
+                    </p>
+                </div>
+                <button type="submit" id="confirmez" class="button is-large is-success">Confirmez</button>
+                <button id="annulez" class="button is-large is-danger">Annulez</button>
+            </form>
         </div>
-        <br>
-        <div class="container-fluid" style="padding-top: 300px;" id="app"></div>
-        <div class="columns is-centered">
-            <div class="column is-half">
-                <form action="/" method="post">
-                    <div class="field is-half">
-                        <label>Email</label>
-                        <p class="control has-icons-left has-icons-right">
-                            <input name="email" id="email" class="input is-large" type="email" placeholder="Email">
-                            <span class="icon is-small is-left">
-                                <i class="glyphicon glyphicon-envelope"></i>
-                            </span>
-                            <span class="icon is-small is-right">
-                                <i class="fas fa-check"></i>
-                            </span>
-                        </p>
-                    </div>
-                    <div class="field">
-                        <label>Password</label>
-                        <p class="control has-icons-left">
-                            <input  name="pass" id="password" class="input is-large" type="password" placeholder="Password">
-                            <span class="icon is-small is-left">
-                                <i class="glyphicon glyphicon-lock"></i>
-                            </span>
-                        </p>
-                    </div>
-                    <button type="submit" id="confirmez" class="button is-large is-success">Confirmez</button>
-                    <button id="annulez" class="button is-large is-danger">Annulez</button>
-                </form>
-            </div>
-        </div>
-        </div>
-        <footer>
-            <a href="/new-user">Créer un compte</a>
-            <br>
-            <a href="/mot-passe-oublie">Mot de passe Oublié?</a>
-        </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
-        <script type="text/javascript"></script>
+        <script src="index.js"></script>
     </body>
 </html>
