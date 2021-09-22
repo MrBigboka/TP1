@@ -1,0 +1,27 @@
+{
+  "name": "TP1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^7.32.0",
+    "firebase": "^9.0.2"
+  },
+  "devDependencies": {
+    "webpack": "^5.53.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrBigboka/TP1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrBigboka/TP1/issues"
+  },
+  "homepage": "https://github.com/MrBigboka/TP1#readme"
+}
